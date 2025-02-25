@@ -283,25 +283,74 @@
 
 
             //kullanicidan 5 adet metinsel ifade aliniz bunlardan kaç tanesi meyve karar veriniz
-            string b = "elma";
-            string c = "karpuz";
-            string d = "armut";
+            //string a = "";
+            //string b = "elma";
+            //string c = "karpuz";
+            //string d = "armut";
+            //int sayac = 0;
 
 
-            string meyve= Console.ReadLine();
-            for (int i = 0; i < 6; i++)
+            //for (int i = 0; i < 6; i++)
+            //{
+
+            //    Console.WriteLine("meyve yaz");
+            //    a = Console.ReadLine();
+
+            //    if (a ==b  || a ==c|| a== d)
+            //    {
+            //       sayac++;
+            //    }
+
+
+            //}
+            //Console.WriteLine(sayac);
+
+            //kullanıcının girdigi sayinin ussunu isteyerek cevaplandiriniz
+
+            //Console.WriteLine("bir sayi giriniz");
+            //int sayi =int.Parse(Console.ReadLine());
+            //Console.WriteLine("üs değeri veriniz");
+            //int us = int.Parse(Console.ReadLine());
+            //int sonuc = 1;
+            //for (int i = 0; i < us; i++)
+
+            //{
+            //    sonuc *= sayi;
+            //}
+            //Console.WriteLine(sonuc);
+
+
+            //ekranda menu gosteriliyor ilk olarak menu alt kısmında ıcerikler.3 menu 3 içerik olacak menuleri de içerikleri de kullanıcılar verecek
+
+
+            string sonucbaslık = "";
+            string icerikbaslik = "";
+
+            string menuBaslık = "";
+            string menuIcerik = "";
+            for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("meyve yaz");
-                if(meyve ==b  || meyve ==c|| meyve == d)
+                Console.WriteLine("menu gir");
+                menuBaslık = Console.ReadLine();
+                sonucbaslık = menuBaslık + sonucbaslık;
+                
+                for (int j = 0; j < 3; j++)
                 {
-                    Console.WriteLine("bu meyvedir");
+                    Console.WriteLine("içerik gir");
+                    menuIcerik = Console.ReadLine();
+                    icerikbaslik = icerikbaslik + "\n" + menuIcerik;
                 }
-                else
-                {
-                    Console.WriteLine("meyve degildir");
-                }
+                Console.WriteLine($"*{sonucbaslık} \n{icerikbaslik}");
             }
-            //kullanicinin girdiği sayinin ussunu isteyerk cevaplandiriniz
+            Console.WriteLine(menuBaslık+menuIcerik );
+
+
+
+
+
+
+
+
 
         }    
 
