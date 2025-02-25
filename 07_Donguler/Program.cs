@@ -3,7 +3,7 @@
     internal class Program
     {
         static void Main(string[] args)
-       {
+        {
             //        // durum true olduğu sürece döngü devam eder.false olursa döngü sonlanır
 
             //        //while (//Durum(true ya da false olur.))
@@ -323,37 +323,181 @@
             //ekranda menu gosteriliyor ilk olarak menu alt kısmında ıcerikler.3 menu 3 içerik olacak menuleri de içerikleri de kullanıcılar verecek
 
 
-            string sonucbaslık = "";
-            string icerikbaslik = "";
+            //string sonucbaslık = "";
+            //string icerikbaslik = "";
 
-            string menuBaslık = "";
-            string menuIcerik = "";
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine("menu gir");
-                menuBaslık = Console.ReadLine();
-                sonucbaslık = menuBaslık + sonucbaslık;
-                
-                for (int j = 0; j < 3; j++)
-                {
-                    Console.WriteLine("içerik gir");
-                    menuIcerik = Console.ReadLine();
-                    icerikbaslik = icerikbaslik + "\n" + menuIcerik;
-                }
-                Console.WriteLine($"*{sonucbaslık} \n{icerikbaslik}");
+            //string menuBaslık = "";
+            //string menuIcerik = "";
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine("menu gir");
+            //    menuBaslık = Console.ReadLine();
+            //    sonucbaslık = menuBaslık + sonucbaslık;
+
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.WriteLine("içerik gir");
+            //        menuIcerik = Console.ReadLine();
+            //        icerikbaslik = icerikbaslik + "\n" + menuIcerik;
+            //    }
+            //    Console.WriteLine($"*{sonucbaslık} \n{icerikbaslik}");
+            //}
+            //Console.WriteLine(menuBaslık+menuIcerik );
+
+
+
+            //2. çözüm
+            //string menu= "";
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine("menu içerigini giriniz");
+            //    menu += Console.ReadLine() + "\n";
+            //    for (int j = 0; j < 3; j++)
+            //    {
+            //        Console.WriteLine("menu icerigini yazin");
+            //        menu += Console.ReadLine() + "\n";
+            //    }
+            //    menu += "\n";
             }
-            Console.WriteLine(menuBaslık+menuIcerik );
+
+            ////continue aşama atlatmak için kullanılır
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    if (i >= 4 && i <= 6)
+            //        continue;
+            //    Console.WriteLine(i);
+            //}
+
+            //kullanıcıdan 5 ifade iste bu ifadelerden meyve olanlarını alt alta yazdırınız
+            //string meyveler = "";
+            //string meyve1 = "elma";
+            //string meyve2 = "armut";
+            //string meyve3 = "kavun";
+
+            //for (int i = 0; i < 6; i++)
+            //{
+            //    string ifaede= Console.ReadLine();
+            // 
+            //    if (ifade == meyve1 || deger == meyve2 || deger == meyve3)
+            //    {
+            //        meyveler +=ifade+"\n";
+            //        continue;
+            //    }
+            //    Console.WriteLine("bu bir meyve degildir");
+            //}
+            //Console.WriteLine(meyveler);
+
+            //kullanıcıdan pozitif bir aralık aliniz 0 ile 100 arasında belirtilen aralık olmadan ekrana gelen sayiların toplamını yazdırınız
+
+            //Console.WriteLine("sayi giriniz");
+            //int ilkDeger = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("sayi giriniz");
+            //int sonDeger =int.Parse(Console.ReadLine());
+
+            //int toplam = 0;
+         
+            //for (int i = 0; i <= 100; i++)
+            //{
+            //    if (ilkDeger<=i && sonDeger<i)
+            //    {
+                
+            //        continue;
+            //    }
+
+            //    toplam += i;
+
+            //}
+            //Console.WriteLine("");
+
+
+            //3 kez kullanıcının girdiğ sayı çiftse karesini ekrana tekse bir fazlasını ekrana yazdırın
 
 
 
 
+            //çarpım tablosunu 5ler olmayacak şekilde yazınız
+
+
+            //for (int i = 0; i <= 10; i++)
+            //{
+            //    if (i == 5)
+            //    {
+            //        continue;
+            //    }
+            //    for (int j = 0; j < 10; j++)
+            //    {
+            //        if (j == 5)
+            //        {
+            //            continue;
+
+            //        }
+            //        Console.WriteLine($"{i}x{j}={i * j}");
+            //    }
+
+            //break dongulerde kullanıldığında ilgili donguyu kırmak için kullanılır
+            // 0 dan 10 a kadar giden bir döngü oluşturunuz döngü içerisinde 5 e denk gelindiğinde dongu sonlansın
+
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    if (i == 5)
+            //        break;
+            //}
+
+            //kullanıcı sınırsız olarak sayı girebilsin gelen sayı tek ise toplama dahil edilmesin sadece ciftleri toplama dahil ederek kullanıcı e haricinde herhangi bir tuşa basana kadar sormaya devam edelim
+            //işlem bitiminde ne kadar sayı girdiyse toplamını ekrana yazdıralım
+
+            int toplam = 0;
+            string cevap = "";
+            int sayi=0;
+
+            for (int i = 0; true ; i++)
+            {
+                Console.WriteLine("Devam edilsin mi e ya da h,");
+                cevap = Console.ReadLine();
+
+                if (cevap == "e")
+                {
+
+                    Console.WriteLine($"{i + 1}.seferde sonlandi");
+                    break;
+                }
+                
+                Console.WriteLine("bir sayi giriniz");
+                 sayi = int.Parse(Console.ReadLine());
+                if (sayi %2 ==0)
+                {
+                    toplam += sayi;
+                }
+
+                Console.WriteLine(toplam);
+               
+                
+              
+
+            }
+
+            //min 0 max 10000000 arasında 3 basamaklı bir sayı gelene kadar ekranda sayiları  yazdiriniz.bu deger geldiği anda donguyu sonlandırınız kacıncı seferde geldigini ve hangisi oldugunu ekranda yazdiriniz
+            Random rnd = new Random();
+            bool devamMi = true;
+            int istenilenSayi = 0;
+            for (; devamMi;)
+            {
+                istenilenSayi =rnd.Next(1,10000001);
+                Console.WriteLine(istenilenSayi);
+                if (istenilenSayi>=100&& istenilenSayi <100)
+                {
+                    break;
+                }
+                Console.ReadLine();
+            }
 
 
 
+            //min 0 
 
 
-        }    
 
-
+        }
     }
 }

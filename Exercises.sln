@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_HataYonetimi", "06_HataY
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Donguler", "07_Donguler\07_Donguler.csproj", "{E6B7DCC9-DEA1-4011-8B45-564537494283}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_HazirFonksiyonlar", "08_HazirFonksiyonlar\08_HazirFonksiyonlar.csproj", "{34DC95A4-B081-47FA-8F0E-3A71FCB45E38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{E6B7DCC9-DEA1-4011-8B45-564537494283}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6B7DCC9-DEA1-4011-8B45-564537494283}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6B7DCC9-DEA1-4011-8B45-564537494283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34DC95A4-B081-47FA-8F0E-3A71FCB45E38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34DC95A4-B081-47FA-8F0E-3A71FCB45E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34DC95A4-B081-47FA-8F0E-3A71FCB45E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34DC95A4-B081-47FA-8F0E-3A71FCB45E38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
