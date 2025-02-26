@@ -3,23 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalkBank-Examples", "HalkBank-Examples\HalkBank-Examples.csproj", "{428C155A-3D33-44F1-8558-E8DAD4578492}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HalkBank-Examples", "HalkBank-Examples\HalkBank-Examples.csproj", "{428C155A-3D33-44F1-8558-E8DAD4578492}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Intro", "01_Intro\01_Intro.csproj", "{BCCC9390-7877-4C50-B796-E2DE10B9DC14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Intro", "01_Intro\01_Intro.csproj", "{BCCC9390-7877-4C50-B796-E2DE10B9DC14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_Operatorler", "02_Operatorler\02_Operatorler.csproj", "{8D47A2B9-9315-4C96-AD85-8E6BDF7C9548}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_Operatorler", "02_Operatorler\02_Operatorler.csproj", "{8D47A2B9-9315-4C96-AD85-8E6BDF7C9548}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_Donusturmeler", "03_Donusturmeler\03_Donusturmeler.csproj", "{88046CDC-0288-49AC-AEE1-3D59BDBC79A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_Donusturmeler", "03_Donusturmeler\03_Donusturmeler.csproj", "{88046CDC-0288-49AC-AEE1-3D59BDBC79A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_KullaniciIslemleri", "04_KullaniciIslemleri\04_KullaniciIslemleri.csproj", "{DD7565DF-9E6F-464F-B713-FC0A19B204CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_KullaniciIslemleri", "04_KullaniciIslemleri\04_KullaniciIslemleri.csproj", "{DD7565DF-9E6F-464F-B713-FC0A19B204CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_KosulluIfadeler", "05_KosulluIfadeler\05_KosulluIfadeler.csproj", "{2A51DE93-FFBF-4E52-98D3-07BC21BA53E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_KosulluIfadeler", "05_KosulluIfadeler\05_KosulluIfadeler.csproj", "{2A51DE93-FFBF-4E52-98D3-07BC21BA53E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_HataYonetimi", "06_HataYonetimi\06_HataYonetimi.csproj", "{61B03644-502C-4B5E-BA9A-F8D7E55A860B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_HataYonetimi", "06_HataYonetimi\06_HataYonetimi.csproj", "{61B03644-502C-4B5E-BA9A-F8D7E55A860B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Donguler", "07_Donguler\07_Donguler.csproj", "{E6B7DCC9-DEA1-4011-8B45-564537494283}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07_Donguler", "07_Donguler\07_Donguler.csproj", "{E6B7DCC9-DEA1-4011-8B45-564537494283}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_HazirFonksiyonlar", "08_HazirFonksiyonlar\08_HazirFonksiyonlar.csproj", "{34DC95A4-B081-47FA-8F0E-3A71FCB45E38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08_HazirFonksiyonlar", "08_HazirFonksiyonlar\08_HazirFonksiyonlar.csproj", "{34DC95A4-B081-47FA-8F0E-3A71FCB45E38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Koleksiyonlar", "09_Koleksiyonlar\09_Koleksiyonlar.csproj", "{D2D886DC-8236-47E8-925D-93855A4F73C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_DegerReferansTip", "10_DegerReferansTip\10_DegerReferansTip.csproj", "{F93E6D3F-95C7-4E63-BE89-0AD81E8A2E7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_Metotlar", "11_Metotlar\11_Metotlar.csproj", "{94ABF298-C26C-4642-99D8-B466C4B0A471}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +69,18 @@ Global
 		{34DC95A4-B081-47FA-8F0E-3A71FCB45E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34DC95A4-B081-47FA-8F0E-3A71FCB45E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34DC95A4-B081-47FA-8F0E-3A71FCB45E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2D886DC-8236-47E8-925D-93855A4F73C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2D886DC-8236-47E8-925D-93855A4F73C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2D886DC-8236-47E8-925D-93855A4F73C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2D886DC-8236-47E8-925D-93855A4F73C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93E6D3F-95C7-4E63-BE89-0AD81E8A2E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93E6D3F-95C7-4E63-BE89-0AD81E8A2E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93E6D3F-95C7-4E63-BE89-0AD81E8A2E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93E6D3F-95C7-4E63-BE89-0AD81E8A2E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94ABF298-C26C-4642-99D8-B466C4B0A471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94ABF298-C26C-4642-99D8-B466C4B0A471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94ABF298-C26C-4642-99D8-B466C4B0A471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94ABF298-C26C-4642-99D8-B466C4B0A471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
