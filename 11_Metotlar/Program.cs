@@ -1,4 +1,5 @@
-﻿using System.Threading.Channels;
+﻿using System.Data;
+using System.Threading.Channels;
 
 namespace _11_Metotlar
 {
@@ -19,7 +20,7 @@ namespace _11_Metotlar
 
         static void Main(string[] args)
         {
-            karakter(new List<char> { 'a', 'b', 'c' }, 10, 3);
+            //karakter(new List<char> { 'a', 'b', 'c' }, 10, 3);
             //List<int> sayilar = new List<int> { 1, 2, 3 };
             //Liste(sayilar);
             //KarekterlerineBolen();
@@ -40,7 +41,97 @@ namespace _11_Metotlar
             */
             /*   ZamliFiyat(25000,20,"tv ünitesi");*/
 
+            //string ad = AdVer();
+            //List<int> sayilar = RastgeleSayilardanOlusanListe();
+            //foreach (var item in sayilar)
+            //    Console.WriteLine(item);
+
+            //foreach (var item in RandomCharList())
+            //    Console.WriteLine(item);
+
+            //char karakter = (char)65;
+            //Console.WriteLine(karakter);
+            //int sayi = RastgeleCiftSayi();
+            //Console.WriteLine("Çift Sayi: "+sayi);
+            //string randomnamee = RandomName();
+            //Console.WriteLine(randomnamee);
+            //int enBuyukDeger = BesSayidanEnBuyugunuDonenMethod();
+            //Console.WriteLine(enBuyukDeger);
+
+            //Console.WriteLine( AdSoyadBirlesimi("hakan", "şahin") );
+
+            //string bilgi = Info("hakan",2010);
+            //Console.WriteLine(bilgi);
+
+            //Console.WriteLine(Kontrolcu("alihan", "123qwe"));
+            //Console.ReadLine();
+
+            //int diff = ThreeNumber(15, 55, 72);
+            //Console.WriteLine(diff);
+            //Console.WriteLine(IsPossible("2f5f"));
+
+
+            //int x =  Faktoriyel(3);
+            //Console.WriteLine(x);
+
+            //List<int[]> ints = new List<int[]>()
+            //{
+            //    new int[]
+            //    {
+            //        1,2,3
+            //    },
+            //    new int[]
+            //    {
+            //        5
+            //    },
+            //    new int[]
+            //    {
+            //        12,54,2,452,4
+            //    }
+            //};
+            //Listele(ints);
+
+
+
+            //Console.WriteLine(Toplamaİslemi()); 
+
+            //int sayi = FazlasiylaToplaBelirtilenKatiAl(2,10,20);
+            //sayi = FazlasiylaToplaBelirtilenKatiAl(2,new int[] {1,2,3,4});
+            //Console.WriteLine(sayi);
+            //Console.WriteLine(MetinselIfade("selam","naber"));
+
+            //Selamliyorum();
+            //Selamliyorum("Hakan");
+            //Selamliyorum("Hakan", "Şahin");
+
+            int sayi1 = 2;
+            int sayi2;
+            YerDegistir(ref sayi1, out sayi2);
+
+            Console.WriteLine(sayi1);
+            Console.WriteLine(sayi2);
         }
+
+        #region Ref, Out
+        // Ref : Bu anahtar kelime kullanildigi alanda gonderilen degiskenin icerisinde degerinin olmasini bekler eger deger yoksa bu metoda kabul etmez.
+
+        // Out : Bu kelimeyi kullanirken yine adres kopyalamasi yaparsiniz fakat aralarindaki far, ref kullanildigi yerde tanimlanmis olmasi gerekirken, outta kullanildigi yerde tanimlanmis olmasi gerekmez. Out tametot icerisinde mutlaka deger atamasi gerceklestirilmelidir.
+        static void YerDegistir(ref int sayi1, out int sayi2)
+        {
+            sayi2 = 0;
+            int sakla = sayi2;
+
+            if (sayi1 > sayi2)
+            {
+                sayi2 = sayi1;
+            }
+            sayi1 = sakla;
+        }
+
+
+
+
+        #endregion
 
 
 
@@ -196,6 +287,250 @@ namespace _11_Metotlar
         }
         #endregion
 
+        #region Geriye deger donduren parametre almayan metot
+
+        // return  : Geriye deger dondurmeyen metotlardada kullanilan amaci metodu kesmek olan bu anahtar kelime geriye deger dondurenlerde onune yazilan degeri donmektedir.
+
+        static string AdVer()
+        {
+            string ad = "hakan";
+            return ad;
+        }
+
+        static List<int> RastgeleSayilardanOlusanListe()
+        {
+            Random random = new Random();
+            List<int> ints = new List<int>();
+
+            for (int i = 0; i < 10; i++)
+                ints.Add(random.Next(10));
+
+            return ints;
+        }
+
+
+        // Rastgele karakterlerden olusan bir Liste olusturunuz. Olusan bu listeyi geriye donunuz.
+
+        //static List<char> RandomCharList()
+        //{
+        //    var random = new Random();
+        //    var charList = new List<char>();
+
+        //    for (int i = 0; i < 10; i++)
+        //    {
+        //        charList.Add((char)random.Next(65, 90));
+        //    }
+        //    return charList;
+        //}
+        // Kullaniciya [0-100] arasinda rastgele cift bir sayi donen metot olusturunuz.
+        //static int RastgeleCiftSayi()
+        //{
+        //    Random rnd = new Random();
+
+        //    while (true)
+        //    {
+        //        int sayi = rnd.Next(0, 100);
+        //        if (sayi%2==0)
+        //        {
+        //            return sayi;
+        //        }
+        //    }
+        //}
+
+
+        // Rastgele bir isim donduren metot olusturunuz.
+        static string RandomName()
+        {
+            string[] names = { "emre", "alperen", "hasan", "canberk", "osman", "samet", "kadir" };
+            Random random = new Random();
+            int index = random.Next(names.Length);
+            return names[index];
+        }
+        // Rastgele uretilen 5 sayidan en buyugunu donen metot olusturunuz.
+
+        static int BesSayidanEnBuyugunuDonenMethod()
+        {
+            List<int> integerlar = new List<int>();
+            Random random = new Random();
+
+            for (int i = 0; i < 5; i++)
+            {
+                integerlar.Add(random.Next(100));
+            }
+
+            int enBuyuk = integerlar[0];
+
+            foreach (var item in integerlar)
+            {
+                enBuyuk = Math.Max(item, enBuyuk);
+            }
+
+            return enBuyuk;
+
+        }
+
+
+
+
+
+        #endregion
+
+        #region Geriye deger donduren parametre alan metot
+
+        // Ad soyad alip geriye tek bir string ifade olarak donen metot olusturunuz.
+
+        static string AdSoyadBirlesimi(string ad, string soyad)
+        {
+            return $"{ad} {soyad}";
+        }
+
+        // Adini ve dogum tarihini alarak adinin yaninda yasini yazip gonderen metot olusturunuz.
+
+        // default parametre : Eger disaridan birsey gelmez ise defaultta verilen parametre degerleri kullanilir ve default verilen parametreler sonda yazilmalidir.
+        static string Info(string ad = "Misafir", int dogumYili = 2000)
+        {
+            int yas = 2025 - dogumYili;
+            return $"{ad} {yas} yasindadir.";
+        }
+
+        // Disaridan iki  pozitif sayi alip buyugu kucuge bolen metot olusturunuz. Deger gelmezse default degeler 1 olsun
+
+        static int SayiBol(int sayi1 = 1, int sayi2 = 1)
+        {
+            int buyuk = Math.Max(sayi1, sayi2);
+            int kucuk = Math.Min(sayi1, sayi2);
+
+            int bolme = buyuk / kucuk;
+            return bolme;
+        }
+
+        // Kullanici adi ve parola kontrolu yapip geriye true veya false olarak donen metot olusturunuz.
+
+        static bool Kontrolcu(string kAdi, string parola)
+        {
+
+            return kAdi == "alihan" && parola == "123qwe";
+
+
+        }
+
+        // Gonderilen 3 adet sayidan en buyugu ile en kucugu arasindaki mesafeyi donen metot olusturunuz.
+        static int ThreeNumber(int number1, int number2, int number3)
+        {
+            int longest = Math.Max(number1, (Math.Max(number2, number3)));
+            int shortest = Math.Min(number1, (Math.Min(number2, number3)));
+            int diff = longest - shortest;
+            return diff;
+        }
+
+        // Gonderilen metinsel ifade tam sayiya donusturelebiliyormu donusturulemiyormu cevabini donen metot olusturunuz.
+
+        static bool IsPossible(string input)
+        {
+
+            try
+            {
+                Convert.ToInt32(input);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+            //return int.TryParse(input, out int number) ;
+        }
+
+        #endregion
+
+        #region Recursive
+        // Metodun kendi icerisinde kendisini cagirarak kullanma seklidir.
+
+        // Faktoriyel hesaplayan recursive function.
+
+        static int Faktoriyel(int sayi)
+        {
+            if (sayi == 1)
+                return 1;
+            return sayi * Faktoriyel(sayi - 1);
+        }
+
+        // Gonderilen dizi icerisinde dizinin tum elemanlarini yazdiran metot olusturunuz.
+        static void Listele(List<int[]> sayilar)
+        {
+            if (sayilar.Count == 0)
+                return;
+
+            for (int i = 0; i < sayilar.Count; i++)
+            {
+                Console.WriteLine($"***{sayilar.Count}***");
+                foreach (var diziElemani in sayilar[i])
+                {
+                    Console.WriteLine(diziElemani);
+                }
+
+                sayilar.Remove(sayilar[i]);
+                Listele(sayilar);
+            }
+        }
+
+        // Sifirdan gonderilen sayiya kadar toplama islemi yapan ve sonucu donduren metot olusturunuz.
+        static int Toplamaİslemi(int a = 10)
+        {
+            if (a == 1)
+            {
+                return 1;
+            }
+            return a + Toplamaİslemi(a - 1);
+        }
+
+
+        #endregion
+
+        #region Params
+        // Params : Sinirsiz olarak parametre almayi saglayan anahtar kelimedir. Parametre belirtirken params ile belirlenen parametre sona yazilmalidir.
+
+        static int FazlasiylaToplaBelirtilenKatiAl(int kat, params int[] sayilar)
+        {
+            int toplam = 0;
+            foreach (var item in sayilar)
+            {
+                toplam += item;
+            }
+            return toplam * kat;
+        }
+
+        // Sinirsiz olarak metinsel ifade alan ve bunlarin her birinin eleman sayisi miktarini toplayan ve geriye donen metot olusturunuz. 
+
+        static int MetinselIfade(params string[] ifadeler)
+        {
+            int total = 0;
+            foreach (var item in ifadeler)
+            {
+                total += item.Length;
+            }
+            return total;
+        }
+
+        #endregion
+        #region Method Overload
+
+        // Method Overload : Metot asiri yuklemesi durumu ayni isimde birden fazla metodun bulunmasi ama hepsinin parametrelerinin farkli olmasi ile olusur.
+
+        static void Selamliyorum()
+        {
+            Console.WriteLine("Merhaba");
+        }
+        static void Selamliyorum(string ad)
+        {
+            Console.WriteLine($"Merhaba {ad}");
+        }
+        static void Selamliyorum(string ad, string soyad = "şahin")
+        {
+            Console.WriteLine($"Merhaba {ad} {soyad}");
+        }
+
+        #endregion
 
 
     }
