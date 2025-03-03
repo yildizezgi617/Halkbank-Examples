@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_DegerReferansTip", "10_D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_Metotlar", "11_Metotlar\11_Metotlar.csproj", "{94ABF298-C26C-4642-99D8-B466C4B0A471}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_MasaustuUygulama", "12_MasaustuUygulama\12_MasaustuUygulama.csproj", "{F9ED826A-3FC3-44B4-83CE-5D6B3CA6E59E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{94ABF298-C26C-4642-99D8-B466C4B0A471}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94ABF298-C26C-4642-99D8-B466C4B0A471}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94ABF298-C26C-4642-99D8-B466C4B0A471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9ED826A-3FC3-44B4-83CE-5D6B3CA6E59E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9ED826A-3FC3-44B4-83CE-5D6B3CA6E59E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9ED826A-3FC3-44B4-83CE-5D6B3CA6E59E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9ED826A-3FC3-44B4-83CE-5D6B3CA6E59E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
