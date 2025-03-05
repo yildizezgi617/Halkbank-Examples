@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_MasaustuUygulama", "12_M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13_OOPGiris", "13_OOPGiris\13_OOPGiris.csproj", "{CD309E04-3C4D-45AA-B711-9729FB61DF4B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_OOPConstructor", "14_OOPConstructor\14_OOPConstructor.csproj", "{8B05A352-4658-4EF7-AAF7-79AA7AA20CB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{CD309E04-3C4D-45AA-B711-9729FB61DF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD309E04-3C4D-45AA-B711-9729FB61DF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD309E04-3C4D-45AA-B711-9729FB61DF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B05A352-4658-4EF7-AAF7-79AA7AA20CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B05A352-4658-4EF7-AAF7-79AA7AA20CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B05A352-4658-4EF7-AAF7-79AA7AA20CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B05A352-4658-4EF7-AAF7-79AA7AA20CB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
