@@ -6,98 +6,149 @@ namespace _14_OOPConstructor
     {
         static void Main(string[] args)
         {
-            //Constructor:Bir sınıfın yapıcı olan methodudur. İlk nesne üretildiğinde bu method çalışır.Görünür hale getirmesekte yapıcı method aktiftir. Bir sınıf orneği oluşturulurken tek bir ctor üzerinden ayağa kaldırılır.
-            //This sınıfı ilgili methodu temsil eder. içinde ne var ne yoksa görebilirsiniz.
+            // Constructor : Bir sinifin yapici olan metodudur. Ilk nesne ornegi uretildiginde bu metot calisir. Gorunur hale getirmesekte yapici metot aktiftir. Bir sinif ornegi olustururken tek bir ctor uzerinden ayaga kaldirilir.
 
-            //Metro kadikoySabihaGokcen = new Metro();
+            // this : Ilgili sinifi temsil eder. Icerisinde kullandiginizda ne var e yoksa gorebilirsiniz.
+
             //new Metro();
-            //new Metro("BU İKİNCİ CTORUN MESAJI");
+            //new Metro("Bu ikinci metromuz");
 
             //var metro = new Metro(-500);
             //Console.WriteLine(metro.PassengerCapacity);
 
-            //Kedi sınıfı oluşturarak içerisine Tur,Cinsiyet,YasamSuresi,Renk,TuyluMu,Ad,Mensei özelliklerini oluşturunuz. Her kedi örneği oluşturulduğunda bir kedi gordum sanki yazdırınız. Ctor üzerinden kapsüllemesiz ozelliklere deger atılabilsin. encapsulation get set ile sağlansın. ad max 25 min 2 karakter olsun. tür elimizde olanlardan degilse elimizden random olarak atansın. Renk elimizdekilerden degilse random atilsin. Yasam süreleri en az 10 yil olmalidir. Mensei belirlenen ülkelerden farkli ise random belirtilsin.Bos gelen tüm özellikler random olarak atansin.
+            //for (int i = 0; ; i++)
+            //{
+            //    new Metro(i);
+            //}
 
+            // Kedi sinifi olusturarak icerisine Tur,Cinsiyet,YasamSuresi,Renk, TuyluMu, Ad, Mensei ozelliklirini olusturunuz. Her kedi ornegi olusturuldugunda bir kedi gordum sanki yazdirilsin. Ctor uzerinden kapsullemesiz ozelliklere deger atilabilsin. Encapsulation get set ile saglansin. Ad max 25 karakter,Ad min 2 karakter, Tur elimizde olanlardan degilse elimizden random olarak atansin, Renk elimizdekilerden degilse random atilsin, Yasam sureleri en az 10 yil olmalidir, Mensei belirlenen ulkelerden farkli ise random belirtilsin. Bos gelen tum ozellikler random olarak atansin. 
 
-            //Kedi kedi = new Kedi();
+            //Kedi kedi = new Kedi("tekir","disi",15,"beyaz",true,"tigra","trabzon");
+
             //kedi.Ad = "T";
             //Console.WriteLine(kedi.Ad);
-            //kedi.Tur = "flfdş";
-            //Console.WriteLine(kedi.Tur);
-            //kedi.Mensei = "Turkiye";
+            //kedi.Turu = "sdfds";
+            //Console.WriteLine(kedi.Turu);
+            //kedi.Renk = "dffkjd";
+            //Console.WriteLine(kedi.Renk);
+            //kedi.YasamSuresi = 3;
+            //Console.WriteLine(kedi.YasamSuresi);
+            //kedi.Mensei = "dsfasgasd";
             //Console.WriteLine(kedi.Mensei);
 
-            //Kedi kedi3 = new Kedi("tekir", "disi", 15, "beyaz", true, "tigra,", "trabzon");
-
-            //Film adında bir sınıf oluşturun içersinde filmadı yönetmeni cikis yili, imdb, konu, katgeori,hasilat, ozelliklerini kullanıcıdan alalım
-
-            //kullanıcı her veriyi dogru formatta girene kadar sorabilmeli ve hatalara engel olmaliyiz.Proje akısında devam edebilmelidir.
-
-            //film adi en fazla 25 karakterden olusabilir ve bos gecilemez olmalıdır,
-
-            //çıkış yılı gelecekten bir tarih olamaz en son bu günün tarihi olmalıdır.
-
-            //imdb max 10.0 olmalı ve negtaif olmamalıdır.
-
-            //konu max 200 karakter olmalıdır 
-
-            // kategori bos gecilemez 3 karekterden az 25 karakterden fazla olamaz
-
-            //hasilat negatif ve 1 milyarın üzerinde olamaz
-
-            //Istenirse deger atamaları ctor üzerinden gerçekleştirilebilsin
-
-            // Idler otomatik olarak 1 den başlasın ve devam etsin.
-
-
-            //Console.WriteLine("Lütfen film adını giriniz");
-
-            //Film film = new Film();
-
-
-            //film.FilmAdi = Console.ReadLine();
-            //Console.WriteLine(film.FilmAdi);
+            // Film adinda bir sinif olusturunuz. Icerisinde Id, filmadi,yonetmeni,cikis tarihi, imdb,konu,kategori,hasilat ozelliklerini kullanicidan alalim.
+            // * Kullanici her veriyi dogru formatta girene kadar sorabilmeli ve hatalara engel olmaliyiz. Proje akisinda devam edebilmelidir.
+            // * Film adi en fazla 25 karakterden olusabilir ve bos gecilemez olsun.
+            // * Cikis yili gelecekten bir tarih olamaz en on bu gunun tarihi olmalidir.
+            // * imdb max 10.0 olmali ve negatif olmamalidir.
+            // * konu max 200 karakter olmalidir.
+            // * Kategori bos gecilemez 3 karakterden az ve 25 karakterden fazla olamaz.
+            // * Hasilat negatif ve 1 milyarin uzerinde olamaz.
+            // * Istenirse deger atamalari ctor uzerinden gerceklestirilebilsin.
+            // Idler otomatik olarak 1 den baslasin ve devam etsin.  
 
             Film film = new Film();
             bool devamMi = true;
+            //do
+            //{
+            //    try
+            //    {
+            //        Console.WriteLine("Lütfen Film adi giriniz");
+            //        film.FilmAdi = Console.ReadLine();
+            //        devamMi = false;
+            //        Console.ReadLine();
+            //    }
+            //    catch (ArgumentException ex)
+            //    {
+            //        Console.WriteLine(ex.Message);
+            //        devamMi = true;
+            //    }
+            //    catch(Exception ex)
+            //    {
+            //        Console.WriteLine(ex.Message);
+            //        devamMi = true;
+            //    }
+            //    Thread.Sleep(1000);
+            //    Console.Clear();
+
+            //} while (devamMi);
+            //Console.Write("Film tarihini giriniz : ");
+            //film.CikisTarihi = DateTime.Parse(Console.ReadLine());
+
+            //Console.WriteLine(film.CikisTarihi);
+
+            //do
+            //{
+            //    try
+            //    {
+            //        Console.WriteLine("Lütfen Film Puanı giriniz");
+            //        film.Rating = double.Parse(Console.ReadLine());
+            //        devamMi = false;
+            //        Console.ReadLine();
+            //    }
+            //    catch (ArgumentException ex)
+            //    {
+            //        Console.WriteLine(ex.Message);
+            //        devamMi = true;
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Console.WriteLine(ex.Message);
+            //        devamMi = true;
+            //    }
+            //    Thread.Sleep(3000);
+            //    Console.Clear();
+
+            //} while (devamMi);
+
+            // Konu
+            //do
+            //{
+            //    try
+            //    {
+            //        Console.WriteLine("Lütfen bir film konusu giriniz");
+            //        film.Konu = Console.ReadLine();
+            //        devamMi = false;
+            //        Console.ReadLine();
+            //    }
+            //    catch (ArgumentException ex)
+            //    {
+            //        Console.WriteLine(ex.Message);
+            //        devamMi = true;
+            //    }
+            //    catch (Exception ex)
+            //    {
+            //        Console.WriteLine(ex.Message);
+            //        devamMi = true;
+            //    }
+            //    Thread.Sleep(3000);
+            //    Console.Clear();
+
+            //} while (devamMi);
+            /*
             do
             {
                 try
                 {
-                    Console.WriteLine("Lütfen film adını giriniz:");
-                    film.FilmAdi = Console.ReadLine();
+                    Console.WriteLine("kategori giriniz");
+                    film.Kategori = Console.ReadLine();
                     devamMi = false;
-
-                    Console.WriteLine("Lütfen yönetmen adını giriniz:");
-                    string yonetmen = Console.ReadLine();
-
-                    Console.WriteLine("Lütfen çıkış yılını giriniz:");
-                    int cikisYili = int.Parse(Console.ReadLine());
-
-                    Console.WriteLine("Lütfen IMDB puanını giriniz:");
-                    double imdb = double.Parse(Console.ReadLine());
-
-                    Console.WriteLine("Lütfen konuyu giriniz:");
-                    string konu = Console.ReadLine();
-
-                    Console.WriteLine("Lütfen kategoriyi giriniz:");
-                    string kategori = Console.ReadLine();
-
-                    Console.WriteLine("Lütfen hasılatı giriniz:");
-                    decimal hasilat = decimal.Parse(Console.ReadLine());
-
-                    film = new Film(filmadi, yonetmen, cikisYili, imdb, konu, kategori, hasilat);
+                    Console.ReadLine();
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Hata: {ex.Message}");
+                    Console.WriteLine(ex.Message);
+                    devamMi = true;
                 }
+                Thread.Sleep(3000);
+                Console.Clear();
 
-
-            }
+            } while (devamMi);
+            */
+            Console.WriteLine("Hasılat giriniz: ");
+            decimal hasilat = Convert.ToDecimal(Console.ReadLine());
+            film.Hasilat = hasilat;
+            Console.WriteLine($"Filmden kazandığınız hasılat: {film.Hasilat}");
         }
     }
 }
-
-
-

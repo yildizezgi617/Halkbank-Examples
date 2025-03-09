@@ -1,39 +1,45 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace _14_OOPConstructor.Models
+﻿namespace _14_OOPConstructor.Models
 {
-    class Metro
+    internal class Metro
     {
-        //ct tab tab dendiğinde oluşur.
-        //:this() yaptığımda akış şu şekilde ilk passengercapacityli olanı çalıştırıcam o gidip mesaj olanı tetikliycek o da boş olanı tetikli,ycek ilk once boş olanın içi çalışcak sonra mesajlı olanın içi en son passengercapacity
         public Metro()
         {
-            Console.WriteLine("Yapıcı  method çalışti");
+            Console.WriteLine("Bir metro satin alindi...");
         }
-        public Metro(string mesaj) : this() // boş olanı tetikler
+        public Metro(string mesaj) : this()
         {
             Console.WriteLine(mesaj);
         }
 
-        public Metro(int passengercapacity) :this("mesaj")   //mesajlı olanı tetikler
+        public Metro(int passangerCapasity) : this("mesaj")
         {
-            if (passengercapacity<0)
-            {
-                passengercapacity = 0;              //passengercapacity nin set işlemi burda yapılıyor setini kaldırdık.
-            }
-            this.PassengerCapacity = passengercapacity;
-            
+            if (passangerCapasity < 0)
+                passangerCapasity = 0;
+
+            this.PassengerCapacity = passangerCapasity;
+
+            Console.WriteLine("Kapasite : " + this.PassengerCapacity);
         }
 
-        public int PassengerCapacity { get; }
+        public int PassengerCapacity { get; set; }
         public decimal FuelPrice { get; set; }
-        ~Metro()
-        {
-            //Destructor : Yikici method. Bu metot ram uzerinden ilgili nesnenin isi bitirilip kaldırıldığı esnada calıştırılır. zaman bağımsız çalışmaktadır. kullanımı tercih edilmez.
-        }
+
+
+
+
+
+        // Destructor : Yikici metot. Bu metot ram uzerinden ilgili nesnenin isi bitirilip kaldirilacagi esnada calistirilir. Zaman bagimsiz calismaktadir kullanimi tercih edilmez.
+        //Random random = new Random();
+        //Console.WriteLine(random.Next(0,10));
+        //public Metro(int id)
+        //{
+        //    _id = id;
+        //}
+        //int _id;
+        //~Metro()
+        //{
+
+        //    Console.WriteLine(_id);
+        //}
     }
 }

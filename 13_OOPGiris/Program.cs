@@ -1,4 +1,5 @@
 ﻿using _13_OOPGiris.Models;
+using System.Xml;
 
 namespace _13_OOPGiris
 {
@@ -6,68 +7,102 @@ namespace _13_OOPGiris
     {
         static void Main(string[] args)
         {
-            // //Class: belirli bir nesneyi temsil edebilen yapılardır.
-            // Gozluk busraninGozlugu = new Gozluk();
-            // busraninGozlugu.Marka = "Bilge Karga";
-            // busraninGozlugu.Model = "Kemik Model";
-            // busraninGozlugu.Numara = 0;
-            // busraninGozlugu.Renk = "Siyah";
-            // busraninGozlugu.Cerceve = "Kemik";
-            // busraninGozlugu.CamTuru = "Polarize";
-            // busraninGozlugu.Fiyat = 1000;
+            // Class : Belirli bir nesneyi temsil edebilen yapilardir. 
+            // Class : Belirli bir nesneyi temsil edebilen yapilardir. 
 
+            //Gozluk busraninGozlugu = new Gozluk();
+            //busraninGozlugu.Marka = "BilgeKarga";
+            //busraninGozlugu.Model = "Martı";
+            //busraninGozlugu.Numara = 0;
+            //busraninGozlugu.Renk = "Siyah";
+            //busraninGozlugu.Cerceve = "Kemik";
+            //busraninGozlugu.CamTuru = "Polarize";
+            //busraninGozlugu.Fiyat = 1000;
 
             //Gozluk kadirinGozlugu = new Gozluk()
-            // {
-            //     Marka = "Armaniy",
+            //{
+            //    Marka = "Armaniy",
             //     Model = "R500",
-            //     CamTuru = "Iyi Cam",
-            //     Cerceve = "Standart",
-            //     Numara = 2.3f,
-            //     Renk = "Mavi",
-            //     Fiyat = 700,
-            // };
+            //      CamTuru = "Iyi Cam",
+            //       Cerceve = "Standart",
+            //        Numara = 2.3f,
+            //         Renk = "Sekilli Gozluk Rengi",
+            //          Fiyat = 700
+            //};
 
-            // Console.WriteLine( kadirinGozlugu.Marka);
+            //Console.WriteLine( kadirinGozlugu.Marka );
 
-            // User user1 = new User();
+            //User user = new User();
+            //user.Id = "101102";
+            //user.FirstName = "Busra";
+            //user.LastName = "Bilgucu";
+            //user.UserName = "bilgucu.busra";
+            //user.Email = "busrabilgucu@gmail.com";
+            //user.BirthDay = DateTime.Parse("2000.03.28");
+            //user.Phone = "0542 274 33 35";
+            //user.IsActive = true;
+            //user.Password = "3215465462513";
 
-            // user1.Id = 25883034;
-            // user1.FirstName = "Ezgi";
-            // user1.LastName = "Yildiz";
-            // user1.PhoneNumber = "05392295860";
-            // user1.Email = "yildiz@gmail.com";
-            // user1.IsActive = true;
-            // user1.Password ="3543434";
-            // user1.BirthDate = DateTime.Parse("2000:05:02");
-
-            // Console.WriteLine($"Bu kullanıcının adı: {user1.FirstName} Soyadı : {user1.LastName} Telefon nosu {user1.PhoneNumber} Maili : {user1.Email}  Aktif mi {user1.IsActive}");
+            //Console.WriteLine($"Id:{user.Id}\nFirst Name : {user.FirstName}\nLast Name: {user.LastName}\n UserName : {user.UserName}\nEmail:{user.Email}\nBirth Day: {user.BirthDay}\nPhone : {user.Phone}\nIsActive:{user.IsActive}\nParola: {user.Password}");
 
 
+            //string marka = "janshbdlksjadasd";
+            //string model = "";
+            //string kordon = "asdsalkjdmsafd";
 
             //Saat saat = new Saat();
-            //saat.Marka = "kkklsdl";
-            //Console.WriteLine(saat.Marka);
 
+            //// Marka en fazla 5 karakter olabilir.
+            //if (marka.Length > 5)
+            //    marka = marka.Remove(5);
+
+            //saat.Marka = marka;
+
+            //// Model en az 5 karakter oılabilir eger azsa * ile doldurunuz.
+            //if (model.Length < 5)
+            //    model = model.PadLeft(5,'*');
+
+            //saat.Model = model;
+
+            //Console.WriteLine("Marka : "+saat.Marka);
+            //Console.WriteLine("Model : "+saat.Model);
+
+            //Saat saat = new Saat();
+            //saat.Marka = "ABCDEFG"; // set
             //saat.Fiyat = -5000;
+            //Console.WriteLine(saat.Marka); // get
             //Console.WriteLine(saat.Fiyat);
 
+            //Users user1 = new Users();
+            //user1.FirstName = "E";
+            //Console.WriteLine(user1.FirstName);
 
-            User user2 = new User();
-            user2.FirstName = "ezgikfdkdfjjjjjjjjjjjjjjjjjjjjjjjgg";
-            Console.WriteLine(user2.FirstName);
+            //user1.LastName = "eAFGDFDSAFASDFASFDASFASDFASFADSfasdas";
+            //Console.WriteLine(user1.LastName);
+            /*
+            var newInstance = new Users();
 
-            user2.LastName = "d";
-            Console.WriteLine(  user2.LastName);
+            newInstance.Email = "Hello @ this is my . mail";
 
-            user2.Email = "lrklşrl";
-            Console.WriteLine( user2.Email);
+            Console.WriteLine(newInstance.Email);
+            */
 
-            user2.Password = "jk";
-            Console.WriteLine(user2.Password);
+            //Console.WriteLine(Guid.NewGuid().ToString().Substring(1,4));
+            /*
+            Users users = new Users();
+            users.Password = "password2132132132123121";
 
-            user2.UserName = "mkjlmk";
-            Console.WriteLine(user2.UserName);
-    }
+            Console.WriteLine(users.Password);
+            */
+
+            //Users user1 = new Users();
+            ////user1.UserName = "Tessdadasd";
+            ////Console.WriteLine(user1.UserName);
+            ////user1.PhoneNumber = "65464564563232423";
+            //user1.BirthDate = new DateTime(2010, 01, 02);
+            //Console.WriteLine(user1.BirthDate);
+
+
+        }
     }
 }

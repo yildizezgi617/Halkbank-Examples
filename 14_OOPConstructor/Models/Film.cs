@@ -1,5 +1,4 @@
-﻿using _14_OOPConstructor.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,124 +6,115 @@ using System.Threading.Tasks;
 
 namespace _14_OOPConstructor.Models
 {
-    class Film
+    internal class Film
     {
-
-
-		//public Film(string filmadi, string yonetmen, int cikistarihi, double imdb, string konu, string kategori, decimal hasilat)
-		//{
-
-		//}
-
-
-
-
-
-		private int _id;
-
-		public int Id
-		{
-			get { return _id; }
-			set { _id = value; }
-		}
-
-		private string _filmadi;
-
-		public string FilmAdi
-		{
-			get
-			{
-				return _filmadi; 
-			}
-			set 
-			{
-				if (string.IsNullOrEmpty(value))
-				{
-					throw new ArgumentException("Boş olmayan bir film adı veriniz");
-				}
-				if (value.Length>25)
-				{
-					throw new ArgumentException("25 karakterden daha kısa bir ad girin");
-				}
-				_filmadi = value;
-			}
-		}
-
-
-		private string _yonetmenadi;
-
-		public string YonetmenAdi
-		{
-			get { return _yonetmenadi; }
-			set { _yonetmenadi = value; }
-		}
-
-
-		private int _cikistarihi;
-
-		public int CikisTarihi
-		{
-			get { return _cikistarihi; }
-			set
-			{
-				if (_cikistarihi<2025)
-				{
-                    _cikistarihi = value;
+        private string _filmAdi;
+        private double _rating;
+        private static int idSayac = 1;
+        public Film(string filmAdi, double rating, DateTime cikisTarihi, string konu, string kategori, decimal hasilat)
+        {
+            FilmAdi = filmAdi;
+            Rating = rating;
+            CikisTarihi = cikisTarihi;
+            Konu = konu;
+            Kategori = kategori;
+            Hasilat = hasilat;
+            Id = idSayac++;
+        }
+        public int Id { get; private set; }
+        public double Rating
+        {
+            get { return _rating; }
+            set
+            {
+                if (value < 0 || value > 10)
+                {
+                    throw new ArgumentOutOfRangeException("Düzgün gir(0 ile 10 arasında bir değer giriniz).");
                 }
-				else
-				{
-					throw new ArgumentException("çıkış tarihi 2025den fazla olamaz.");
-				}
-			}
-		}
-
-			
-
-		private string _konu;
-
-		public string Konu
-		{
-			get { return _konu; }
-			set { _konu = value; }
-		}
-
-		private string _kategori;
-
-		public string Kategori
-		{
-			get { return _kategori; }
-			set { _kategori = value; }
-		}
-
-		private decimal _hasilat;
-
-		public decimal Hasilat
-		{
-			get { return _hasilat; }
-			set { _hasilat = value; }
-		}
+                _rating = value;
+            }
+        }
 
 
+        public string FilmAdi
+        {
+            get { return _filmAdi; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException(" Girilen girdi null veya empty olamaz");
+                }
+                if (value.Length > 25)
+                    throw new Exception("Girilen karakter 25 den uzun olamaz");
 
-		 3
+                _filmAdi = value;
+            }
+        }
+
+        private DateTime cikisTarihi;
+
+        public DateTime CikisTarihi
+        {
+            get { return cikisTarihi; }
+            set
+            {
+                if (value > DateTime.Now)
+                {
+                    value = DateTime.Now;
+                }
+                cikisTarihi = value;
+            }
+        }
+
+        private string konu;
+
+        public string Konu
+        {
+            get { return konu; }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentNullException("Filmin konusu boş geçilemez. Lütfen geçerli bir konu giriniz.");
+                else if (value.Length < 0 || value.Length > 200)
+                    throw new ArgumentNullException("konu 0-200 karakter arasında olmalıdır.");
+
+                konu = value;
+            }
+        }
+
+        private string _kategori;
+
+        public string Kategori
+        {
+            get { return _kategori; }
+            set
+            {
+
+                if (string.IsNullOrEmpty(value))
+                    throw new ArgumentNullException("Kategori alanı boş bırakılamaz");
+                if (value.Length < 3 || value.Length > 25)
+                    throw new ArgumentNullException("KATEGORİ 3 İLE 25 ARASINDA oLMALIDIR");
+                _kategori = value;
+
+            }
+        }
 
 
+        private decimal _hasilat;
 
-	}
+        public decimal Hasilat
+        {
+            get { return _hasilat; }
+            set
+            {
+                if (value > 1000000000)
+                {
+                    value = 1000000000;
+                }
+                else if (value < 0) value = 0;
+                _hasilat = value;
+            }
+        }
+    }
 }
-//  using _14_OOPConstructor.Models;
-//using System;
-
-//namespace _14_OOPConstructor
-//{
-//    internal class Program
-//    {
-//        static void Main(string[] args)
-//        {
-            
-//            }
-
-//            Console.WriteLine($"Film başarıyla oluşturuldu: {film.FilmAdi}, {film.Yonetmen}, {film.CikisYili}, {film.Imdb}, {film.Konu}, {film.Kategori}, {film.Hasilat}");
-//        }
-//    }
-//}
