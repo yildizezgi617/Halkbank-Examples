@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            //Polymorphism: Bir oluşumu daha sonrasında değişikliğe maruz kalabilmesi durumudur
+            //Interface: Arayüz olarak geçem bu nesneler sozleşme olarak kullan9ılmaktadırç bir sınıf birden fazla miras alamamasından kaynaklı dogmaktadır. ınterfaceler birden fazla implemente edilebilirler
+
         }
     }
 }

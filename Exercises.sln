@@ -43,6 +43,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_EnumSabitleri", "17_Enum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19_Abstraction", "19_Abstraction\19_Abstraction.csproj", "{FF2053A0-4F0B-4F72-B82F-0CE8C12E220E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20_Polymorphism", "Polymorphism\20_Polymorphism.csproj", "{16A6B817-37B7-42A1-9AC0-8B2F2CA35105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_Generics", "21_Generics\21_Generics.csproj", "{67B028A5-9B05-4C76-B0DE-FF21DBD0CE17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +133,14 @@ Global
 		{FF2053A0-4F0B-4F72-B82F-0CE8C12E220E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF2053A0-4F0B-4F72-B82F-0CE8C12E220E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF2053A0-4F0B-4F72-B82F-0CE8C12E220E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16A6B817-37B7-42A1-9AC0-8B2F2CA35105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16A6B817-37B7-42A1-9AC0-8B2F2CA35105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16A6B817-37B7-42A1-9AC0-8B2F2CA35105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16A6B817-37B7-42A1-9AC0-8B2F2CA35105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B028A5-9B05-4C76-B0DE-FF21DBD0CE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B028A5-9B05-4C76-B0DE-FF21DBD0CE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B028A5-9B05-4C76-B0DE-FF21DBD0CE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B028A5-9B05-4C76-B0DE-FF21DBD0CE17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
-﻿using _16_StaticYapilar.Models;
+﻿                                                                                                                                         
+using _16_StaticYapilar.Models;
 
 namespace _16_StaticYapilar.Extensions
 {
@@ -10,3 +11,4 @@ namespace _16_StaticYapilar.Extensions
         }
     }
 }
+ 
